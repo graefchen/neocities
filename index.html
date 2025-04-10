@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>The web site of graefchen</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>graef</title>
+    <link rel="icon" href="data:," />
+    <meta name="description" content="graef's personal blog" />
+    <link rel="stylesheet" href="/style.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="graef" />
+    <meta property="og:description" content="graef's personal blog" />
+    <meta name="theme-color" content="#e45858" />
   </head>
+
   <body>
-    <h1>Welcome to my Website!</h1>
-
-    <p>This is a paragraph! Here's how you make a link: <a href="https://neocities.org">Neocities</a>.</p>
-
-    <p>Here's how you can make <strong>bold</strong> and <em>italic</em> text.</p>
-
-    <p>Here's how you can add an image:</p>
-    <img src="neocities.png">
-
-    <p>Here's how to make a list:</p>
-
-    <ul>
-      <li>First thing</li>
-      <li>Second thing</li>
-      <li>Third thing</li>
-    </ul>
-
-    <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
+    <header class="header full-screen">
+      <div class="logo center">
+        <img
+          id="image"
+          alt="profile picture"
+          width="160"
+          height="160"
+          src="upload/profile-picture.jpg"
+        />
+        <h1>graef</h1>
+        <span><i id="t">developer, developer, developer</i></span>
+        <div class="display text-center">
+          <h2>👋 Hey!</h2>
+          <p>
+            I am a programmer living in germany.<br />I am currently studying
+            <i>archaeology</i> and <i>computer linguistics</i> at the
+            <a href="https://phil-fak.uni-koeln.de">university of cologne</a>.
+          </p>
+          <p>
+            I love <i>web design</i>, <i>programming</i>, <i>archaeology</i> &
+            <i>cats</i> 🐈.
+          </p>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
+
