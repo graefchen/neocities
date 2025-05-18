@@ -1,37 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="page">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>yt-graef</title>
     <link rel="icon" href="data:," />
     <meta name="description" content="graef's personal site" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/cirrus-ui/dist/cirrus.min.css"
+    />
   </head>
 
-  <body>
+  <body class="u-flex u-flex-column">
     <header>
-      <nav>
-        <ul>
-          <strong>graef</strong>
-        </ul>
-        <ul>
-          <li><a href="..">Home</a></li>
-          <li><a href="../about/">About</a></li>
-          <li><a href="../yt/">Video</a></li>
-        </ul>
-      </nav>
+      <div class="header header-fixed u-unselectable header-animated h-auto">
+        <div class="header-brand">
+          <div class="nav-item no-hover">
+            <a><h6 class="title">graef</h6></a>
+          </div>
+          <div class="nav-item nav-btn" id="header-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="header-nav nav-right" id="header-menu" role="button">
+          <!-- Other nav categories, controls, nav-items, etc. This is hidden on touch enabled devices -->
+          <div class="nav-item">
+            <a href="..">Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="">About</a>
+          </div>
+          <div class="nav-item">
+            <a href="../yt/">Videos</a>
+          </div>
+        </div>
+      </div>
     </header>
-    <main>
-      <section id="libraries">
+    <main class="section py-24 u-flex-grow-1">
+      <section class="content px-4" id="libraries">
         <h2>Libraries I use:</h2>
-        <ul>
-          <li>
-            <a href="https://github.com/paulirish/lite-youtube-embed">
-              lite-yt-embed
-            </a>
-          </li>
-        </ul>
+        <div class="grid xs:grid-cols-1 sm:grid-cols-2 grid-cols-1 u-gap-4">
+          <a href="https://github.com/paulirish/lite-youtube-embed">
+            <div class="card u-text-center pt-3">
+              <h3 class="u-text-center">lite-yt-embed</h3>
+              <div class="divider"></div>
+              <div class="content"><p>This library ...</p></div>
+            </div>
+          </a>
+        </div>
       </section>
     </main>
+    <footer class="footer">
+      <h6 class="footer__title text-white uppercase">graef</h6>
+      <div class="content">
+        <div class="divider"></div>
+        <p>
+          Created by
+          <a class="u u-LR" href="https://github.com/graefchen">graefchen</a>,
+          code is available on
+          <a class="u u-LR" href="https://github.com/graefchen/neocities"
+            >github</a
+          >.
+        </p>
+      </div>
+    </footer>
   </body>
+  <script>
+    // Get all the nav-btns in the page
+    let navBtns = document.querySelectorAll(".nav-btn");
+
+    // Add an event handler for all nav-btns to enable the dropdown functionality
+    navBtns.forEach(function (ele) {
+      ele.addEventListener("click", function () {
+        // Get the dropdown-menu associated with this nav button (insert the id of your menu)
+        let dropDownMenu = document.getElementById("header-menu");
+
+        // Toggle the nav-btn and the dropdown menu
+        ele.classList.toggle("active");
+        dropDownMenu.classList.toggle("active");
+      });
+    });
+  </script>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,45 +9,110 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="graef" />
     <meta property="og:description" content="graef's personal site" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/cirrus-ui/dist/cirrus.min.css"
+    />
   </head>
 
   <body>
     <header>
-      <nav>
-        <ul>
-          <strong>graef</strong>
-        </ul>
-        <ul>
-          <li><a href="..">Home</a></li>
-          <li><a href="../about/">About</a></li>
-          <li><a href="../yt/">Video</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div>
-        <img
-          id="image"
-          alt="profile picture"
-          width="160"
-          height="160"
-          src="upload/profile-picture.jpg"
-        />
-        <h1>graef</h1>
-        <span><i id="t">css-enthusiast &amp; developer</i></span>
-        <div>
-          <h2>👋 Hey!</h2>
-          <p>
-            I am a programmer living in germany.<br />I am currently studying
-            <i>archaeology</i> and <i>computer linguistics</i> at the
-            <a href="https://phil-fak.uni-koeln.de">university of cologne</a>.
-          </p>
-          <p>
-            I love <i>web design</i>, <i>programming</i>, <i>archaeology</i>,
-            <i>playing videogames</i> &amp; <i>cats</i> 🐈.
-          </p>
+      <div class="header header-fixed u-unselectable header-animated">
+        <div class="header-brand">
+          <div class="nav-item no-hover">
+            <a><h6 class="title">graef</h6></a>
+          </div>
+          <div class="nav-item nav-btn" id="header-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="header-nav nav-right" id="header-menu" role="button">
+          <!-- Other nav categories, controls, nav-items, etc. This is hidden on touch enabled devices -->
+          <div class="nav-item">
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-item">
+            <a href="/about/">About</a>
+          </div>
+          <div class="nav-item">
+            <a href="/yt/">Videos</a>
+          </div>
         </div>
       </div>
+    </header>
+    <main>
+      <div class="hero fullscreen bg-indigo-200">
+        <div class="hero-body">
+          <div class="content u-text-center">
+            <img
+              class="mx-auto u-round-xl"
+              id="image"
+              alt="profile picture"
+              width="400"
+              height="400"
+              src="upload/profile-picture.jpg"
+            />
+            <h1 class="title uppercase">graef</h1>
+            <h3 class="subtitle"><i>css-enthusiast &amp; developer</i></h3>
+          </div>
+        </div>
+      </div>
+      <div class="u-round-sm w-48 p-4 mx-auto">
+        <h2>👋 Hey!</h2>
+        <p>
+          I am a programmer living in germany.<br />I am currently studying
+          <i>archaeology</i> and <i>computer linguistics</i> at the
+          <a href="https://phil-fak.uni-koeln.de">university of cologne</a>.
+        </p>
+        <p>
+          I love <i>web design</i>, <i>programming</i>, <i>archaeology</i>,
+          <i>playing videogames</i> &amp; <i>cats</i> 🐈.
+        </p>
+      </div>
     </main>
+    <footer class="footer">
+      <h6 class="footer__title text-white uppercase">graef</h6>
+      <div class="content">
+        <div class="divider"></div>
+        <p>
+          Created by <a href="https://github.com/graefchen">graefchen</a>, code
+          is available on
+          <a href="https://github.com/graefchen/neocities">github</a>.
+        </p>
+      </div>
+    </footer>
   </body>
+  <script>
+    // Get all the nav-btns in the page
+    let navBtns = document.querySelectorAll(".nav-btn");
+
+    // Add an event handler for all nav-btns to enable the dropdown functionality
+    navBtns.forEach(function (ele) {
+      ele.addEventListener("click", function () {
+        // Get the dropdown-menu associated with this nav button (insert the id of your menu)
+        let dropDownMenu = document.getElementById("header-menu");
+
+        // Toggle the nav-btn and the dropdown menu
+        ele.classList.toggle("active");
+        dropDownMenu.classList.toggle("active");
+      });
+    });
+  </script>
 </html>
