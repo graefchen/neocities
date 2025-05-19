@@ -16,43 +16,92 @@
     />
   </head>
 
-  <body>
+  <body class="has-navbar-fixed-top">
     <header>
-      <nav>
-        <ul>
-          <strong>graef</strong>
-        </ul>
-        <ul>
-          <li><a href="..">Home</a></li>
-          <li><a href="../about/">About</a></li>
-          <li><a href="../yt/">Video</a></li>
-        </ul>
+      <nav class="navbar is-fixed-top is-dark has-shadow">
+        <div class="navbar-brand">
+          <div class="navbar-item">graef</div>
+          <a
+            role="button"
+            class="navbar-burger"
+            data-target="nav-menu"
+            aria-label="menu"
+            aria-expanded="false"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu navbar-end" id="nav-menu">
+          <a class="navbar-item has-background-primary" href="..">Home</a>
+          <a class="navbar-item" href="../about/">About</a>
+          <a class="navbar-item" href="../yt/">Video</a>
+        </div>
       </nav>
     </header>
     <main>
-      <div>
-        <img
-          id="image"
-          alt="profile picture"
-          width="160"
-          height="160"
-          src="upload/profile-picture.jpg"
-        />
-        <h1>graef</h1>
-        <span><i id="t">css-enthusiast &amp; developer</i></span>
-        <div>
-          <h2>👋 Hey!</h2>
-          <p>
-            I am a programmer living in germany.<br />I am currently studying
-            <i>archaeology</i> and <i>computer linguistics</i> at the
-            <a href="https://phil-fak.uni-koeln.de">university of cologne</a>.
-          </p>
-          <p>
-            I love <i>web design</i>, <i>programming</i>, <i>archaeology</i>,
-            <i>playing videogames</i> &amp; <i>cats</i> 🐈.
-          </p>
+      <section class="hero is-danger is-fullheight-with-navbar">
+        <div class="hero-body is-justify-content-center">
+          <div class="has-text-centered">
+            <figure class="image is-1by1 is-rounded">
+              <img
+                style="border-radius: 1.25rem"
+                class="mx-auto"
+                id="image"
+                alt="profile picture"
+                width="400"
+                height="400"
+                src="upload/profile-picture.jpg"
+              />
+            </figure>
+            <h1 class="title">graef</h1>
+            <h3 class="subtitle"><i>css-enthusiast &amp; developer</i></h3>
+          </div>
         </div>
-      </div>
+      </section>
+      <section class="container section is-medium has-text-centered">
+        <h2 class="title is-2">👋 Hey!</h2>
+        <p class="block">
+          I am a programmer living in germany.<br />I am currently studying
+          <i>archaeology</i> and <i>computer linguistics</i> at the
+          <a href="https://phil-fak.uni-koeln.de">university of cologne</a>.
+        </p>
+        <p class="block">
+          I love <i>web design</i>, <i>programming</i>, <i>archaeology</i>,
+          <i>playing videogames</i> &amp; <i>cats</i> 🐈.
+        </p>
+      </section>
     </main>
+    <footer class="footer">
+      <p class="container">
+        Created by <a href="https://github.com/graefchen">graefchen</a>, code is
+        available on
+        <a href="https://github.com/graefchen/neocities">github</a>.
+      </p>
+    </footer>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach((el) => {
+        el.addEventListener("click", () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle("is-active");
+          $target.classList.toggle("is-active");
+        });
+      });
+    });
+  </script>
 </html>

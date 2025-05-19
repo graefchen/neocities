@@ -13,30 +13,89 @@
     />
   </head>
 
-  <body>
+  <body class="has-navbar-fixed-top">
     <header>
-      <nav>
-        <ul>
-          <strong>graef</strong>
-        </ul>
-        <ul>
-          <li><a href="..">Home</a></li>
-          <li><a href="../about/">About</a></li>
-          <li><a href="../yt/">Video</a></li>
-        </ul>
+      <nav class="navbar is-fixed-top is-dark has-shadow">
+        <div class="navbar-brand">
+          <div class="navbar-item">graef</div>
+          <a
+            role="button"
+            class="navbar-burger"
+            data-target="nav-menu"
+            aria-label="menu"
+            aria-expanded="false"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu navbar-end" id="nav-menu">
+          <a class="navbar-item" href="..">Home</a>
+          <a class="navbar-item has-background-primary" href="../about"
+            >About</a
+          >
+          <a class="navbar-item" href="../yt/">Video</a>
+        </div>
       </nav>
     </header>
     <main>
-      <section id="libraries">
-        <h2>Libraries I use:</h2>
-        <ul>
-          <li>
-            <a href="https://github.com/paulirish/lite-youtube-embed">
-              lite-yt-embed
-            </a>
-          </li>
-        </ul>
+      <section class="section is-large" id="libraries">
+        <h2 class="title is-2">Libraries I use:</h2>
+        <div class="fixed-grid has-1-cols-mobile">
+          <div class="grid">
+            <div class="cell">
+              <a
+                class="card box"
+                href="https://github.com/paulirish/lite-youtube-embed"
+              >
+                <div class="card-content">
+                  <h3 class="title is-3">lite-yt-embed</h3>
+                  <div class="content"><p>This library ...</p></div>
+                </div>
+              </a>
+            </div>
+            <div class="cell">
+              <a class="card box" href="https://bulma.iod">
+                <div class="card-content">
+                  <h3 class="title is-3">bulma</h3>
+                  <div class="content"><p>For styling ...</p></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+    <footer class="footer">
+      <p class="container">
+        Created by <a href="https://github.com/graefchen">graefchen</a>, code is
+        available on
+        <a href="https://github.com/graefchen/neocities">github</a>.
+      </p>
+    </footer>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach((el) => {
+        el.addEventListener("click", () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle("is-active");
+          $target.classList.toggle("is-active");
+        });
+      });
+    });
+  </script>
 </html>
