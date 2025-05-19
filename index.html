@@ -11,12 +11,6 @@
     <meta property="og:description" content="graef's personal site" />
 
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700"
       rel="stylesheet"
     />
@@ -32,10 +26,10 @@
 
   <body>
     <header>
-      <div class="header header-fixed u-unselectable header-animated">
+      <div class="header header-animated mb-0">
         <div class="header-brand">
           <div class="nav-item no-hover">
-            <a><h6 class="title">graef</h6></a>
+            <h6 class="title">graef</h6>
           </div>
           <div class="nav-item nav-btn" id="header-btn">
             <span></span>
@@ -45,7 +39,7 @@
         </div>
         <div class="header-nav nav-right" id="header-menu" role="button">
           <!-- Other nav categories, controls, nav-items, etc. This is hidden on touch enabled devices -->
-          <div class="nav-item">
+          <div class="nav-item active">
             <a href="#">Home</a>
           </div>
           <div class="nav-item">
@@ -58,11 +52,11 @@
       </div>
     </header>
     <main>
-      <div class="hero fullscreen bg-indigo-200">
+      <section id="hero" class="hero fullscreen bg-indigo-200">
         <div class="hero-body">
           <div class="content u-text-center">
             <img
-              class="mx-auto u-round-xl"
+              class="animated bounce mx-auto u-round-xl"
               id="image"
               alt="profile picture"
               width="400"
@@ -73,28 +67,38 @@
             <h3 class="subtitle"><i>css-enthusiast &amp; developer</i></h3>
           </div>
         </div>
-      </div>
-      <div class="u-round-sm w-48 p-4 mx-auto">
-        <h2>👋 Hey!</h2>
-        <p>
-          I am a programmer living in germany.<br />I am currently studying
-          <i>archaeology</i> and <i>computer linguistics</i> at the
-          <a href="https://phil-fak.uni-koeln.de">university of cologne</a>.
-        </p>
-        <p>
-          I love <i>web design</i>, <i>programming</i>, <i>archaeology</i>,
-          <i>playing videogames</i> &amp; <i>cats</i> 🐈.
-        </p>
-      </div>
+      </section>
+      <section
+        id="text"
+        class="w-48 md:w-64 p-4 mx-auto h-screen u-flex u-flex-column u-justify-center"
+      >
+        <div>
+          <h2>👋 Hey!</h2>
+          <p>
+            I am a programmer living in germany.<br />I am currently studying
+            <i>archaeology</i> and <i>computer linguistics</i> at the
+            <a class="u u-LR" href="https://phil-fak.uni-koeln.de">
+              university of cologne</a
+            >.
+          </p>
+          <p>
+            I love <i>web design</i>, <i>programming</i>, <i>archaeology</i>,
+            <i>playing videogames</i> &amp; <i>cats</i> 🐈.
+          </p>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <h6 class="footer__title text-white uppercase">graef</h6>
       <div class="content">
         <div class="divider"></div>
         <p>
-          Created by <a href="https://github.com/graefchen">graefchen</a>, code
-          is available on
-          <a href="https://github.com/graefchen/neocities">github</a>.
+          Created by
+          <a class="u u-LR" href="https://github.com/graefchen">graefchen</a>,
+          code is available on
+          <a class="u u-LR" href="https://github.com/graefchen/neocities"
+            >github</a
+          >.
         </p>
       </div>
     </footer>

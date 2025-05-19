@@ -8,12 +8,6 @@
     <meta name="description" content="graef's personal site" />
 
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700"
       rel="stylesheet"
     />
@@ -29,10 +23,10 @@
 
   <body class="u-flex u-flex-column">
     <header>
-      <div class="header header-fixed u-unselectable header-animated h-auto">
+      <div class="header header-animated mb-0">
         <div class="header-brand">
           <div class="nav-item no-hover">
-            <a><h6 class="title">graef</h6></a>
+            <h6 class="title">graef</h6>
           </div>
           <div class="nav-item nav-btn" id="header-btn">
             <span></span>
@@ -45,7 +39,7 @@
           <div class="nav-item">
             <a href="..">Home</a>
           </div>
-          <div class="nav-item">
+          <div class="nav-item active">
             <a href="">About</a>
           </div>
           <div class="nav-item">
@@ -54,17 +48,29 @@
         </div>
       </div>
     </header>
-    <main class="section py-24 u-flex-grow-1">
-      <section class="content px-4" id="libraries">
-        <h2>Libraries I use:</h2>
+    <main class="section px-4 u-flex-grow-1">
+      <section class="content my-8" id="libraries">
+        <h1 class="u-text-center">Libraries I use:</h1>
         <div class="grid xs:grid-cols-1 sm:grid-cols-2 grid-cols-1 u-gap-4">
-          <a href="https://github.com/paulirish/lite-youtube-embed">
-            <div class="card u-text-center pt-3">
-              <h3 class="u-text-center">lite-yt-embed</h3>
-              <div class="divider"></div>
-              <div class="content"><p>This library ...</p></div>
-            </div>
-          </a>
+          <div class="card u-text-center pt-3">
+            <h2 class="u-text-center">
+              <a
+                class="u u-C"
+                href="https://github.com/paulirish/lite-youtube-embed"
+              >
+                lite-yt-embed
+              </a>
+            </h2>
+            <div class="divider"></div>
+            <div class="content"><p>This library ...</p></div>
+          </div>
+          <div class="card u-text-center pt-3">
+            <h2 class="u-text-center">
+              <a class="u u-C" href="https://cirrus-ui.com"> Cirrus </a>
+            </h2>
+            <div class="divider"></div>
+            <div class="content"><p>This library ...</p></div>
+          </div>
         </div>
       </section>
     </main>
