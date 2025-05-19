@@ -26,41 +26,78 @@
 
   <body>
     <header>
-      <nav>
-        <ul>
-          <strong>graef</strong>
-        </ul>
-        <ul>
-          <li><a href="..">Home</a></li>
-          <li><a href="../about/">About</a></li>
-          <li><a href="../yt/">Video</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <h6 class="navbar-brand">graef</h6>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="..">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about/">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../yt/">Video</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
-      <div>
-        <img
-          id="image"
-          alt="profile picture"
-          width="160"
-          height="160"
-          src="upload/profile-picture.jpg"
-        />
-        <h1>graef</h1>
-        <span><i id="t">css-enthusiast &amp; developer</i></span>
-        <div>
-          <h2>👋 Hey!</h2>
-          <p>
-            I am a programmer living in germany.<br />I am currently studying
-            <i>archaeology</i> and <i>computer linguistics</i> at the
-            <a href="https://phil-fak.uni-koeln.de">university of cologne</a>.
-          </p>
-          <p>
-            I love <i>web design</i>, <i>programming</i>, <i>archaeology</i>,
-            <i>playing videogames</i> &amp; <i>cats</i> 🐈.
-          </p>
+      <div class="vh-100 text-center d-flex flex-column">
+        <div
+          class="h-100 d-flex flex-column justify-content-center align-items-center"
+        >
+          <img
+            class="rounded-5 mx-4 my-5"
+            id="image"
+            alt="profile picture"
+            width="400"
+            height="400"
+            src="upload/profile-picture.jpg"
+          />
+          <h1>graef</h1>
+          <span><i id="t">css-enthusiast &amp; developer</i></span>
         </div>
+      </div>
+      <div class="container">
+        <h2>👋 Hey!</h2>
+        <p>
+          I am a programmer living in germany.<br />I am currently studying
+          <i>archaeology</i> and <i>computer linguistics</i> at the
+          <a href="https://phil-fak.uni-koeln.de">university of cologne</a>.
+        </p>
+        <p>
+          I love <i>web design</i>, <i>programming</i>, <i>archaeology</i>,
+          <i>playing videogames</i> &amp; <i>cats</i> 🐈.
+        </p>
       </div>
     </main>
   </body>
+  <footer class="container text-center py-3 px-4">
+    <div class="container border-bottom">
+      <h5>graef</h5>
+    </div>
+    <div>
+      <p>
+        Created by <a href="https://github.com/graefchen">graefchen</a>, code is
+        available on
+        <a href="https://github.com/graefchen/neocities">github</a>.
+      </p>
+    </div>
+  </footer>
 </html>
