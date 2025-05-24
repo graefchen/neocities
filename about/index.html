@@ -23,7 +23,7 @@
 
   <body class="u-flex u-flex-column">
     <header>
-      <div class="header header-animated mb-0">
+      <div class="header header-fixed header-animated mb-0">
         <div class="header-brand">
           <div class="nav-item no-hover">
             <h6 class="title">graefchen</h6>
@@ -49,7 +49,8 @@
       </div>
     </header>
     <main class="section px-4 u-flex-grow-1">
-      <section class="content my-8" id="libraries">
+      <div class="space space--xl"></div>
+      <section class="content" id="libraries">
         <h1 class="u-text-center">Libraries I use:</h1>
         <div class="grid xs:grid-cols-1 sm:grid-cols-2 grid-cols-1 u-gap-4">
           <div class="card u-text-center pt-3">
@@ -62,14 +63,25 @@
               </a>
             </h2>
             <div class="divider"></div>
-            <div class="content"><p>This library ...</p></div>
+            <div class="content">
+              <p class="m-1">
+                For the YouTube Videos presented on the
+                <a href="../yt">Videos</a> Site. This Library has been choosen
+                as it is fairly lightweight and makes the Website load faster
+                than using the native YouTube Video embed.
+              </p>
+            </div>
           </div>
           <div class="card u-text-center pt-3">
             <h2 class="u-text-center">
               <a class="u u-C" href="https://cirrus-ui.com"> Cirrus </a>
             </h2>
             <div class="divider"></div>
-            <div class="content"><p>This library ...</p></div>
+            <div class="content">
+              <p class="m-1">
+                Cirrus was choosen as the css-framwork for multiple reasons.
+              </p>
+            </div>
           </div>
         </div>
       </section>
