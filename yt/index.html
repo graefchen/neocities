@@ -3,16 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>yt-graef</title>
+    <title>graefchen::videos</title>
     <link rel="icon" href="data:," />
     <meta name="description" content="graef's personal site" />
     <!-- <meta property="og:type" content="website" />
     <meta property="og:title" content="graef" />
     <meta property="og:description" content="graef's personal site" /> -->
-
-    <!--  Using the lite-youtube-embed -->
-    <link rel="stylesheet" href="../lib/lite-yt-embed.css" />
-    <script src="../lib/lite-yt-embed.js"></script>
 
     <link
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700"
@@ -26,6 +22,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/cirrus-ui/dist/cirrus.min.css"
     />
+
+    <!--  Using the lite-youtube-embed -->
+    <link rel="stylesheet" href="../lib/lite-yt-embed.css" />
+    <script src="../lib/lite-yt-embed.js"></script>
   </head>
 
   <body>
@@ -33,7 +33,7 @@
       <div class="header header-animated mb-0">
         <div class="header-brand">
           <div class="nav-item no-hover">
-            <h6 class="title">graef</h6>
+            <h6 class="title">graefchen</h6>
           </div>
           <div class="nav-item nav-btn" id="header-btn">
             <span></span>
@@ -68,7 +68,7 @@
       </section>
       <!-- Implementer note: flex does not work -->
       <section
-        class="content grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1 u-gap-4"
+        class="content grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1 u-gap-4 u-bg-opacity-0"
       >
         <lite-youtube
           class="u-round-md"
@@ -79,7 +79,7 @@
         ></lite-youtube>
         <lite-youtube
           class="u-round-md"
-          id="ds3-mmonlight"
+          id="ds3-moonlight"
           videoid="IXORrz5aeQM"
           title="Dark Souls 3 - NG+7 All Bosses (Moonlight Greatsword)"
           playlabel="Dark Souls 3 - NG+7 All Bosses (Moonlight Greatsword)"
@@ -150,20 +150,5 @@
       </div>
     </footer>
   </body>
-  <script>
-    // Get all the nav-btns in the page
-    let navBtns = document.querySelectorAll(".nav-btn");
-
-    // Add an event handler for all nav-btns to enable the dropdown functionality
-    navBtns.forEach(function (ele) {
-      ele.addEventListener("click", function () {
-        // Get the dropdown-menu associated with this nav button (insert the id of your menu)
-        let dropDownMenu = document.getElementById("header-menu");
-
-        // Toggle the nav-btn and the dropdown menu
-        ele.classList.toggle("active");
-        dropDownMenu.classList.toggle("active");
-      });
-    });
-  </script>
+  <script src="../lib/site.js"></script>
 </html>

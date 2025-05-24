@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>graef</title>
+    <title>graefchen</title>
     <link rel="icon" href="data:," />
     <meta name="description" content="graef's personal site" />
     <meta property="og:type" content="website" />
@@ -29,7 +29,7 @@
       <div class="header header-animated mb-0">
         <div class="header-brand">
           <div class="nav-item no-hover">
-            <h6 class="title">graef</h6>
+            <h6 class="title">graefchen</h6>
           </div>
           <div class="nav-item nav-btn" id="header-btn">
             <span></span>
@@ -98,20 +98,5 @@
       </div>
     </footer>
   </body>
-  <script>
-    // Get all the nav-btns in the page
-    let navBtns = document.querySelectorAll(".nav-btn");
-
-    // Add an event handler for all nav-btns to enable the dropdown functionality
-    navBtns.forEach(function (ele) {
-      ele.addEventListener("click", function () {
-        // Get the dropdown-menu associated with this nav button (insert the id of your menu)
-        let dropDownMenu = document.getElementById("header-menu");
-
-        // Toggle the nav-btn and the dropdown menu
-        ele.classList.toggle("active");
-        dropDownMenu.classList.toggle("active");
-      });
-    });
-  </script>
+  <script src="lib/site.js"></script>
 </html>
