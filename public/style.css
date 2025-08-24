@@ -7,7 +7,8 @@
 h1,
 h2 {
   text-wrap: balance;
-  font-weight: 500;
+  font-weight: normal;
+  font-style: italic;
   margin: 0.35rem 0 0.5rem;
 }
 h1 {
@@ -47,23 +48,12 @@ html {
 body {
   font-size: 17px;
   padding: 0 1rem;
-  color: #fff;
-  background-color: #161618;
 }
 p {
   font-size: 1rem;
 }
-a {
-  color: #e45858;
-}
 a:hover {
   text-decoration: underline;
-}
-i {
-  color: #999;
-}
-p {
-  color: #fff;
 }
 img {
   height: 100%;
@@ -81,23 +71,21 @@ img {
   align-items: center;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .header {
   display: flex;
   flex-direction: column;
 }
 .logo {
-  flex: 1;
   flex-direction: column;
   margin: 2rem 0rem;
 }
 .logo > #image {
   max-width: 10rem;
-  border-radius: 2rem;
-  transition-duration: 200ms;
-}
-.logo > #image:hover {
-  transform: scale(1.1) rotate(-5deg) translateX(-6px);
+  position: relative;
+  float: left;
+  margin: 1rem;
 }
 .logo > .display {
   max-width: 350px;
