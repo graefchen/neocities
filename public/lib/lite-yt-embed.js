@@ -120,7 +120,7 @@ class LiteYTEmbed extends HTMLElement {
     // Not certain if these ad related domains are in the critical path. Could verify with domain-specific throttling.
     LiteYTEmbed.addPrefetch(
       "preconnect",
-      "https://googleads.g.doubleclick.net"
+      "https://googleads.g.doubleclick.net",
     );
     LiteYTEmbed.addPrefetch("preconnect", "https://static.doubleclick.net");
 
@@ -218,7 +218,7 @@ class LiteYTEmbed extends HTMLElement {
     // AFAIK, the encoding here isn't necessary for XSS, but we'll do it only because this is a URL
     // https://stackoverflow.com/q/64959723/89484
     iframeEl.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(
-      this.videoId
+      this.videoId,
     )}?${this.getParams().toString()}`;
     return iframeEl;
   }

@@ -1,6 +1,7 @@
 {
   "editor.formatOnType": true,
   "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
   "[css]": {
     "editor.formatOnType": true,
     "editor.formatOnSave": true,

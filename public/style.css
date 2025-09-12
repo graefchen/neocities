@@ -16,8 +16,7 @@ h1 {
 h2 {
   font-size: 1.7rem;
 }
-a,
-u {
+a {
   text-decoration: none;
 }
 p {
@@ -59,4 +58,9 @@ p {
 img {
   display: block;
   max-width: 100%;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
 }
