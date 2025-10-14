@@ -14,6 +14,32 @@
     <!-- lite-youtube-embed -->
     <link rel="stylesheet" href="../lib/lite-yt-embed.css" />
     <script src="../lib/lite-yt-embed.js"></script>
+    <style>
+      .video-grid {
+        --size: 6;
+        display: grid;
+        grid-template-columns: repeat(var(--size), 1fr);
+        gap: 1rem;
+      }
+      @media only screen and (max-width: 1441px) {
+        .video-grid {
+          --size: 4;
+        }
+      }
+      @media only screen and (max-width: 769px) {
+        .video-grid {
+          --size: 2;
+        }
+      }
+      @media only screen and (max-width: 426px) {
+        .video-grid {
+          --size: 1;
+        }
+      }
+      .video-grid lite-youtube {
+        border-radius: 12px;
+      }
+    </style>
   </head>
 
   <body>
@@ -23,157 +49,314 @@
         <h1>Youtube</h1>
         <p>Youtube videos I think are interesting..</p>
       </hgroup>
-      <section>
-        <h2>Dark Souls</h2>
-        <div class="video-grid">
-          <lite-youtube
-            id="ds3-caestus"
-            videoid="dXoeu3YFAE0"
-            title="Dark Souls 3 - NG+7 All Bosses (Caestus)"
-            playlabel="Dark Souls 3 - NG+7 All Bosses (Caestus)"
-          ></lite-youtube>
-          <lite-youtube
-            id="ds3-moonlight"
-            videoid="IXORrz5aeQM"
-            title="Dark Souls 3 - NG+7 All Bosses (Moonlight Greatsword)"
-            playlabel="Dark Souls 3 - NG+7 All Bosses (Moonlight Greatsword)"
-          ></lite-youtube>
-          <lite-youtube
-            id="ds3-wolf-knight"
-            videoid="aBk53QC-h5Q"
-            title="Dark Souls 3 - NG+7 All Bosses (Wolf Knight's Greatsword)"
-            playlabel="Dark Souls 3 - NG+7 All Bosses (Wolf Knight's Greatsword)"
-          ></lite-youtube>
-          <lite-youtube
-            id="ds3-hollowslayer-greatsword"
-            videoid="AeM1lqbXVVk"
-            title="Dark Souls 3 - NG+7 All Bosses (Hollowslayer Greatsword)"
-            playlabel="Dark Souls 3 - NG+7 All Bosses (Hollowslayer Greatsword)"
-          ></lite-youtube>
-          <lite-youtube
-            id="ds3-gundyrs-halbard"
-            videoid="tMo0ElwomQY"
-            title="Dark Souls 3 - NG+7 All Bosses (Gundyr's Halberd)"
-            playlabel="Dark Souls 3 - NG+7 All Bosses (Gundyr's Halberd)"
-          ></lite-youtube>
-          <lite-youtube
-            id="ds3-warden-twinblades"
-            videoid="sfeiX8eBuZA"
-            title="Dark Souls 3 - NG+7 All Bosses (Warden Twinblades)"
-            playlabel="Dark Souls 3 - NG+7 All Bosses (Warden Twinblades)"
-          ></lite-youtube>
-          <lite-youtube
-            id="ds3-irithyl-straight-word"
-            videoid="35QYbMlqBcA"
-            title="Dark Souls 3 - NG+7 All Bosses (Irithyll Straight Sword)"
-            playlabel="Dark Souls 3 - NG+7 All Bosses (Irithyll Straight Sword)"
-          ></lite-youtube>
-          <lite-youtube
-            id="ds3-onikiri-and-ubadachi"
-            videoid="rW7yNuHmtSw"
-            title="Dark Souls 3 - NG+7 All Bosses (Onikiri and Ubadachi)"
-            playlabel="Dark Souls 3 - NG+7 All Bosses (Onikiri and Ubadachi)"
-          ></lite-youtube>
-          <lite-youtube
-            id="ds3-fume-ultra-greatsword"
-            videoid="dTDRBqUWw9Q"
-            title="Dark Souls 3 - NG+7 All Bosses (Fume Ultra Greatsword)"
-            playlabel="Dark Souls 3 - NG+7 All Bosses (Fume Ultra Greatsword)"
-          ></lite-youtube>
-          <lite-youtube
-            id="ds3-vordts-great-hammer"
-            videoid="1XTphPoEn3s"
-            title="Dark Souls 3 - NG+7 All Bosses (Vordt's Great Hammer)"
-            playlabel="Dark Souls 3 - NG+7 All Bosses (Vordt's Great Hammer)"
-          ></lite-youtube>
-          <lite-youtube
-            id="ds3-ringed-knight-sword"
-            videoid="rRGLs-iz0q4"
-            title="Dark Souls 3 - NG+7 All Bosses (Ringed knight Straight Sword)"
-            playlabel="Dark Souls 3 - NG+7 All Bosses (Ringed knight Straight Sword)"
-          ></lite-youtube>
-          <lite-youtube
-            id="ds3-washing-pole"
-            videoid="EF-qBTBacg4"
-            title="Dark Souls 3 - NG+7 All Bosses (Washing Pole)"
-            playlabel="Dark Souls 3 - NG+7 All Bosses (Washing Pole)"
-          ></lite-youtube>
-        </div>
-      </section>
-      <section>
-        <h2>Video Game Longplays</h2>
-        <div class="video-grid">
-          <lite-youtube
-            id="acnl-sunken-pathway-longplay"
-            videoid="KBw48lQnR5o"
-            title="【あつ森】緑生い茂る自然島 沈んだ谷 | Animal Crossing Longplay 🍃 Sunken Pathway (No Commentary)"
-            playlabel="【あつ森】緑生い茂る自然島 沈んだ谷 | Animal Crossing Longplay 🍃 Sunken Pathway (No Commentary)"
-          ></lite-youtube>
-          <lite-youtube
-            id="acnl-neighborhood-river-mouth-longplay"
-            videoid="DWbNrNYmoWA"
-            title="【あつ森】河口を活かした住宅街 | Animal Crossing Longplay 🍃 neighborhood river mouth area (No Commentary)"
-            playlabel="【あつ森】河口を活かした住宅街 | Animal Crossing Longplay 🍃 neighborhood river mouth area (No Commentary)"
-          ></lite-youtube>
-          <lite-youtube
-            id="acnl-transition-area-longplay"
-            videoid="UxiLJ0KNx_I"
-            title="【あつ森】緑生い茂る自然島 案内所エリアの繋ぎ目 Animal Crossing Longplay 🍃 Transition area (No Commentary)"
-            playlabel="【あつ森】緑生い茂る自然島 案内所エリアの繋ぎ目 Animal Crossing Longplay 🍃 Transition area (No Commentary)"
-          ></lite-youtube>
-          <lite-youtube
-            id="acnl-quaint-european-island"
-            videoid="J8DFsQq0bbk"
-            title="【あつ森】更地から完成まで一気見！アンティークな島作り総集編👒 | Quaint European Island Compilation【島クリエイター】"
-            playlabel="【あつ森】更地から完成まで一気見！アンティークな島作り総集編👒 | Quaint European Island Compilation【島クリエイター】"
-          ></lite-youtube>
-          <lite-youtube
-            id="acnl-abandoned-japanese-islang-longplay"
-            videoid="YqnL1xh7bpc"
-            title="【あつ森】更地から完成まで一気見！荒廃した日本の島作り総集編🍃 | Abandoned Japanese Island Compilation【島クリエイター】"
-            playlabel="【あつ森】更地から完成まで一気見！荒廃した日本の島作り総集編🍃 | Abandoned Japanese Island Compilation【島クリエイター】"
-          ></lite-youtube>
-          <lite-youtube
-            id="folding-ideas-mantracks"
-            videoid="2UDXdqqJQPE"
-            title="Mantracks: a True Story of Fake Fossils"
-            playlabel="Mantracks: a True Story of Fake Fossils"
-          ></lite-youtube>
-          <lite-youtube
-            id="folding-ideas-contrepreneurs"
-            videoid="biYciU1uiUw"
-            title="Contrepreneurs: The Mikkelsen Twins"
-            playlabel="Contrepreneurs: The Mikkelsen Twins"
-          ></lite-youtube>
-        </div>
-      </section>
-      <section>
-        <h2>Video Game Essays</h2>
-        <div class="video-grid">
-          <lite-youtube
-            id="madman-epic-the-best-extraction-shooter"
-            videoid="8em4ztA07SY"
-            title="The Best Extraction Shooter (That Time Forgot) - The Division: Survival"
-            playlabel="The Best Extraction Shooter (That Time Forgot) - The Division: Survival"
-          ></lite-youtube>
-          <lite-youtube
-            id="chad-of-astora-no-hardest-souls"
-            videoid="a5n_fAeU7Ng"
-            title="There is No &#34;Hardest&#34; Souls Game"
-            playlabel="There is No &#34;Hardest&#34; Souls Game"
-          ></lite-youtube>
-        </div>
-      </section>
-      <section>
-        <h2>Video Game Videos</h2>
-        <div class="video-grid">
-          <lite-youtube
-            id="smitty-survival-100-hours-valheim-castle-biome"
-            videoid="eYz_eXyZZtE"
-            title="I Spent 100 Hours Buiding a Castle For Every Valheim Biome"
-            playlabel="I Spent 100 Hours Buiding a Castle For Every Valheim Biome"
-          ></lite-youtube>
-        </div>
+      <section class="video-grid">
+        <lite-youtube
+          id="ds3-caestus"
+          videoid="dXoeu3YFAE0"
+          title="Dark Souls 3 - NG+7 All Bosses (Caestus)"
+          playlabel="Dark Souls 3 - NG+7 All Bosses (Caestus)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="ds3-moonlight"
+          videoid="IXORrz5aeQM"
+          title="Dark Souls 3 - NG+7 All Bosses (Moonlight Greatsword)"
+          playlabel="Dark Souls 3 - NG+7 All Bosses (Moonlight Greatsword)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="ds3-wolf-knight"
+          videoid="aBk53QC-h5Q"
+          title="Dark Souls 3 - NG+7 All Bosses (Wolf Knight's Greatsword)"
+          playlabel="Dark Souls 3 - NG+7 All Bosses (Wolf Knight's Greatsword)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="ds3-hollowslayer-greatsword"
+          videoid="AeM1lqbXVVk"
+          title="Dark Souls 3 - NG+7 All Bosses (Hollowslayer Greatsword)"
+          playlabel="Dark Souls 3 - NG+7 All Bosses (Hollowslayer Greatsword)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="ds3-gundyrs-halbard"
+          videoid="tMo0ElwomQY"
+          title="Dark Souls 3 - NG+7 All Bosses (Gundyr's Halberd)"
+          playlabel="Dark Souls 3 - NG+7 All Bosses (Gundyr's Halberd)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="ds3-warden-twinblades"
+          videoid="sfeiX8eBuZA"
+          title="Dark Souls 3 - NG+7 All Bosses (Warden Twinblades)"
+          playlabel="Dark Souls 3 - NG+7 All Bosses (Warden Twinblades)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="ds3-irithyl-straight-word"
+          videoid="35QYbMlqBcA"
+          title="Dark Souls 3 - NG+7 All Bosses (Irithyll Straight Sword)"
+          playlabel="Dark Souls 3 - NG+7 All Bosses (Irithyll Straight Sword)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="ds3-onikiri-and-ubadachi"
+          videoid="rW7yNuHmtSw"
+          title="Dark Souls 3 - NG+7 All Bosses (Onikiri and Ubadachi)"
+          playlabel="Dark Souls 3 - NG+7 All Bosses (Onikiri and Ubadachi)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="ds3-fume-ultra-greatsword"
+          videoid="dTDRBqUWw9Q"
+          title="Dark Souls 3 - NG+7 All Bosses (Fume Ultra Greatsword)"
+          playlabel="Dark Souls 3 - NG+7 All Bosses (Fume Ultra Greatsword)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="ds3-vordts-great-hammer"
+          videoid="1XTphPoEn3s"
+          title="Dark Souls 3 - NG+7 All Bosses (Vordt's Great Hammer)"
+          playlabel="Dark Souls 3 - NG+7 All Bosses (Vordt's Great Hammer)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="ds3-ringed-knight-sword"
+          videoid="rRGLs-iz0q4"
+          title="Dark Souls 3 - NG+7 All Bosses (Ringed knight Straight Sword)"
+          playlabel="Dark Souls 3 - NG+7 All Bosses (Ringed knight Straight Sword)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="ds3-washing-pole"
+          videoid="EF-qBTBacg4"
+          title="Dark Souls 3 - NG+7 All Bosses (Washing Pole)"
+          playlabel="Dark Souls 3 - NG+7 All Bosses (Washing Pole)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="acnl-sunken-pathway-longplay"
+          videoid="KBw48lQnR5o"
+          title="【あつ森】緑生い茂る自然島 沈んだ谷 | Animal Crossing Longplay 🍃 Sunken Pathway (No Commentary)"
+          playlabel="【あつ森】緑生い茂る自然島 沈んだ谷 | Animal Crossing Longplay 🍃 Sunken Pathway (No Commentary)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="acnl-neighborhood-river-mouth-longplay"
+          videoid="DWbNrNYmoWA"
+          title="【あつ森】河口を活かした住宅街 | Animal Crossing Longplay 🍃 neighborhood river mouth area (No Commentary)"
+          playlabel="【あつ森】河口を活かした住宅街 | Animal Crossing Longplay 🍃 neighborhood river mouth area (No Commentary)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="acnl-transition-area-longplay"
+          videoid="UxiLJ0KNx_I"
+          title="【あつ森】緑生い茂る自然島 案内所エリアの繋ぎ目 Animal Crossing Longplay 🍃 Transition area (No Commentary)"
+          playlabel="【あつ森】緑生い茂る自然島 案内所エリアの繋ぎ目 Animal Crossing Longplay 🍃 Transition area (No Commentary)"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="acnl-quaint-european-island"
+          videoid="J8DFsQq0bbk"
+          title="【あつ森】更地から完成まで一気見！アンティークな島作り総集編👒 | Quaint European Island Compilation【島クリエイター】"
+          playlabel="【あつ森】更地から完成まで一気見！アンティークな島作り総集編👒 | Quaint European Island Compilation【島クリエイター】"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="acnl-abandoned-japanese-islang-longplay"
+          videoid="YqnL1xh7bpc"
+          title="【あつ森】更地から完成まで一気見！荒廃した日本の島作り総集編🍃 | Abandoned Japanese Island Compilation【島クリエイター】"
+          playlabel="【あつ森】更地から完成まで一気見！荒廃した日本の島作り総集編🍃 | Abandoned Japanese Island Compilation【島クリエイター】"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="acnl-japanese-onsen-speed-build"
+          videoid="XcyxuyoKYLg"
+          title="【あつ森】温泉 露天風呂と和風の小道 | Japanese Onsen | Hot Spring | Speed Build | AnimalCrossingNewHorizons"
+          playlabel="【あつ森】温泉 露天風呂と和風の小道 | Japanese Onsen | Hot Spring | Speed Build | AnimalCrossingNewHorizons"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="folding-ideas-mantracks"
+          videoid="2UDXdqqJQPE"
+          title="Mantracks: a True Story of Fake Fossils"
+          playlabel="Mantracks: a True Story of Fake Fossils"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="folding-ideas-contrepreneurs"
+          videoid="biYciU1uiUw"
+          title="Contrepreneurs: The Mikkelsen Twins"
+          playlabel="Contrepreneurs: The Mikkelsen Twins"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="folding-ideas-call-of-duty-ghosts"
+          videoid="eKPM7cZORTE"
+          title="Call of Duty: Ghosts – Power, Paranoia, and Orbital Tungsten Rods"
+          playlabel="Call of Duty: Ghosts – Power, Paranoia, and Orbital Tungsten Rods"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="madman-epic-the-best-extraction-shooter"
+          videoid="8em4ztA07SY"
+          title="The Best Extraction Shooter (That Time Forgot) - The Division: Survival"
+          playlabel="The Best Extraction Shooter (That Time Forgot) - The Division: Survival"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="chad-of-astora-no-hardest-souls"
+          videoid="a5n_fAeU7Ng"
+          title="There is No &#34;Hardest&#34; Souls Game"
+          playlabel="There is No &#34;Hardest&#34; Souls Game"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="smitty-survival-100-hours-valheim-castle-biome"
+          videoid="eYz_eXyZZtE"
+          title="I Spent 100 Hours Buiding a Castle For Every Valheim Biome"
+          playlabel="I Spent 100 Hours Buiding a Castle For Every Valheim Biome"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="retro-gaming-mechanics-explained-missing-no"
+          videoid="ZI50XUeN6QE"
+          title="MissingNo.'s Glitchy Appearance Explained"
+          playable="MissingNo.'s Glitchy Appearance Explained"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="retro-gaming-mechanics-explained-pokemon-sprite-decompression"
+          videoid="aF1Yw_wu2cM"
+          title="Pokémon Sprite Decompression Explained"
+          playable="Pokémon Sprite Decompression Explained"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="gmtk-world-design-of-elden-ring"
+          videoid="LvnlvB9n6ic"
+          title="The World Design of Elden Ring"
+          playable="The World Design of Elden Ring"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="every-frame-a-painting-akira-kurowasa"
+          videoid="doaQC-S8de8"
+          title="Akira Kurosawa - Composing Movement"
+          playable="Akira Kurosawa - Composing Movement"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="jacks-movie-reviews-seven-samurai"
+          videoid="lGVbhTbiafk"
+          title="Seven Samurai - A Lesson In Storytelling"
+          playable="Seven Samurai - A Lesson In Storytelling"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="pink-vanillish-minoccino-black-white"
+          videoid="mVj3Rbm7gks"
+          title="Why you should have a Minoccino in your Pokemon Black & White team"
+          playable="Why you should have a Minoccino in your Pokemon Black & White team"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="pink-vanillish-lillipup-black-white"
+          videoid="_iucRCM8CMs"
+          title="Why you should have a Lillipup in your Pokemon Black & White team"
+          playable="Why you should have a Lillipup in your Pokemon Black & White team"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="pink-vanillish-blitzle-black-white"
+          videoid="AwWBciCDvzw"
+          title="Why you should have a Blitzle in your Pokemon Black & White team"
+          playable="Why you should have a Blitzle in your Pokemon Black & White team"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="pink-vanillish-litwick-black-white"
+          videoid="5fn0hPku2WE"
+          title="Why you should have a Litwick in your Pokemon Black & White team"
+          playable="Why you should have a Litwick in your Pokemon Black & White team"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="pink-vanillish-emolga-black-white"
+          videoid="jP94bgUsYjM"
+          title="Why you should have an Emolga in your Black & White team"
+          playable="Why you should have an Emolga in your Black & White team"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="pink-vanillish-vanillite-black-white"
+          videoid="pY-EPobCMv0"
+          title="Why you should have a Vanillite in your Pokemon Black & White team"
+          playable="Why you should have a Vanillite in your Pokemon Black & White team"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="pink-vanillish-mimikyu"
+          videoid="F8WP_YQKWV0"
+          title="Mimikyu’s relationship with Pikachu"
+          playable="Mimikyu’s relationship with Pikachu"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="hutch-two-much-evolution-pokemon-user-interface"
+          videoid="_NkNldw4fSY"
+          title="The EVOLUTION of Pokémon's User Interface"
+          playable="The EVOLUTION of Pokémon's User Interface"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="doorschnitzel-look-at-pokemon-player-characters"
+          videoid="db3BWo22JQ0"
+          title="A Look at Pokémon's Player Characters"
+          playable="A Look at Pokémon's Player Characters"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="doorschnitzel-look-at-pokemon-rival-characters"
+          videoid="TFigAzWTD4g"
+          title="A Look at Pokémon’s Rival Characters"
+          playable="A Look at Pokémon’s Rival Characters"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="doorschnitzel-look-at-pokemon-professors"
+          videoid="A1CT7HwXcL0"
+          title="A Look at Pokémon’s Professors"
+          playable="A Look at Pokémon’s Professors"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="doorschnitzel-look-at-pokemon-villains"
+          videoid="s2YgluacBV0"
+          title="A Look at Pokémon’s Villains"
+          playable="A Look at Pokémon’s Villains"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="eposvox-rescuing-myself-from-figital-hell"
+          videoid="5qDnx-fcWqo"
+          title="Rescuing myself from Digital Hell"
+          playable="Rescuing myself from Digital Hell"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="pagemelt-be-your-own-algorithm"
+          videoid="Bdj14_jdumI"
+          title="be your own algorithm"
+          playable="be your own algorithm"
+        ></lite-youtube>
+
+        <lite-youtube
+          id="anthony-gramuglia-forced-diversity-does-not-exist"
+          videoid="gDh1cuxCie4"
+          title="Forced Diversity Does [Not] Exist | Ant vs. Anti-Woke Slop"
+          playable="Forced Diversity Does [Not] Exist | Ant vs. Anti-Woke Slop"
+        ></lite-youtube>
       </section>
     </main>
     <footer></footer>

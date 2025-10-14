@@ -35,8 +35,8 @@ html {
     Oxygen, Ubuntu Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 body {
-  font-size: 17px;
-  padding: 0 1rem;
+  /* font-size: 17px;
+  padding: 0 1rem; */
   color: #fff;
   background-color: #161618;
 }
@@ -58,9 +58,4 @@ p {
 img {
   display: block;
   max-width: 100%;
-}
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0.5rem;
 }

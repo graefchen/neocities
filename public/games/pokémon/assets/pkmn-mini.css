@@ -1,0 +1,33 @@
+/* To be used with the images from the pkmn folder */
+.pkmn {
+  width: 40px;
+  height: 30px;
+  image-rendering: pixelated;
+}
+.pkmn.scale-2 {
+  width: 80px;
+  height: 60px;
+}
+.pkmn.scale-5 {
+  width: 200px;
+  height: 150px;
+}
+.pkmn.scale-10 {
+  width: 400px;
+  height: 300px;
+}
+.pkmn.shadow {
+  filter: drop-shadow(0px 0px 0.5px #000000);
+}
+.pkmn.shadow.pkmn.scale-2 {
+  filter: drop-shadow(0px 0px 1px #000000);
+}
+.pkmn.shadow.pkmn.scale-5 {
+  filter: drop-shadow(0px 0px 2.5px #000000);
+}
+.pkmn.shadow.pkmn.scale-10 {
+  filter: drop-shadow(0px 0px 5px #000000);
+}
+.pkmn.inline {
+  vertical-align: middle;
+}
