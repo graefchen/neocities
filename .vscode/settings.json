@@ -1,5 +1,5 @@
 {
-  "editor.formatOnType": true,
+  "editor.formatOnType": false,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
