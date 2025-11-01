@@ -20,5 +20,4 @@ a:hover{text-decoration:underline}img{height:100%;width:100%}
   flex-direction:column}
 .header{display:flex;flex-direction:column}
 .logo{display:flex;flex-direction:row;margin:2rem 0rem}
-.logo > #image{max-width:10rem;position:relative;float:left;margin:1rem}
-.logo > .display{max-width:350px}
+.logo>.image{max-width:10rem;position:relative;float:left;margin:1rem}
