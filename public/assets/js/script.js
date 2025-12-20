@@ -8,19 +8,20 @@ console.log(`${season}, ${daytime}`)
  * very small localStorage wrapper. 
  */
 class Theme {
-	static get current () {
-		if (localStorage !== undefined && localStorage.getItem("theme")) {
-			return localStorage.getItem("theme")
-		} else {
-			return undefined
-		}
-	}
-	static set current (value) {
-		localStorage.setItem("theme", value)
-	}
-	static delete() {
-		localStorage.remove("theme")
-	}
+  static get current () {
+    if (localStorage !== undefined && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme")
+    } else {
+      return undefined
+    }
+  }
+  static set current (value) {
+    localStorage.setItem("theme", value)
+  }
+  static delete() {
+    localStorage.remove("theme")
+  }
 }
 
-const theme = Theme.current
+Theme.current.set(getDayTime(new Date(), true))
+document.body.classList.add(Theme.current.get())

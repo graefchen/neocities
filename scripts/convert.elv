@@ -1,6 +1,7 @@
 #!/usr/bin/env elvish
 
 # written by graefchen
+# based on the script on the elvish website
 # converts the jpg-images from the img/jpg folder
 # into webp images in the webp-folder
 use str

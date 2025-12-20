@@ -4,7 +4,7 @@
  * (c)2025 graefchen (https://github.com/graefchen)  *
  *****************************************************
  * v1.0.1 - Minor changes to be used for me on       *
- *          neaocities (2025-10-31)                  *
+ *          neocities (2025-10-31)                   *
  * v1.0.1 - Initial version (2025-10-13)             *
  *****************************************************
  * LICENSE: This code is in the public domain and    *
