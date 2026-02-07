@@ -1,7 +1,7 @@
 name: Deploy to neocities
 
 on:
-  push: 
+  push:
     branches:
       - main
 
@@ -14,12 +14,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Deploy to neocities
-      uses: bcomnes/deploy-to-neocities@v3.0.4
-      with:
-        api_key: ${{ secrets.NEOCITIES_API_KEY }}
-        cleanup: false
-        neocities_supporter: false
-        preview_before_deploy: true
-        dist_dir: public # the page in public
+      - uses: actions/checkout@v4
+      - name: Deploy to neocities
+        uses: bcomnes/deploy-to-neocities@v3.0.4
+        with:
+          api_key: ${{ secrets.NEOCITIES_API_KEY }}
+          cleanup: false
+          neocities_supporter: false
+          preview_before_deploy: true
+          dist_dir: public # the page in public
